@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D66D210D-5B8E-4F8E-A39D-E127DD26419F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Computerized_Visa_Processing</RootNamespace>
+    <AssemblyName>Computerized Visa Processing</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\MySQL\MySQL Connector Net 5.0.9\Binaries\.NET 2.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business Visa Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Business Visa Form.Designer.cs">
+      <DependentUpon>Business Visa Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fiancee Visa Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fiancee Visa Form.Designer.cs">
+      <DependentUpon>Fiancee Visa Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Journalist Visa Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Journalist Visa Form.Designer.cs">
+      <DependentUpon>Journalist Visa Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Menu.Designer.cs">
+      <DependentUpon>Main Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Relaxation Visa Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relaxation Visa Form.Designer.cs">
+      <DependentUpon>Relaxation Visa Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchbiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchbiz.Designer.cs">
+      <DependentUpon>searchbiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchFiancee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchFiancee.Designer.cs">
+      <DependentUpon>searchFiancee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchJournalist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchJournalist.Designer.cs">
+      <DependentUpon>searchJournalist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchRelax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchRelax.Designer.cs">
+      <DependentUpon>searchRelax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchStudent.Designer.cs">
+      <DependentUpon>searchStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchWorker.Designer.cs">
+      <DependentUpon>searchWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentVisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentVisa.Designer.cs">
+      <DependentUpon>StudentVisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewBiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewBiz.Designer.cs">
+      <DependentUpon>viewBiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewFiancee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewFiancee.Designer.cs">
+      <DependentUpon>viewFiancee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewJournalist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewJournalist.Designer.cs">
+      <DependentUpon>viewJournalist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewRelax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewRelax.Designer.cs">
+      <DependentUpon>viewRelax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewStudent.Designer.cs">
+      <DependentUpon>viewStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewWorker.Designer.cs">
+      <DependentUpon>viewWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Worker Visa Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Worker Visa Form.Designer.cs">
+      <DependentUpon>Worker Visa Form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Business Visa Form.resx">
+      <DependentUpon>Business Visa Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fiancee Visa Form.resx">
+      <DependentUpon>Fiancee Visa Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Journalist Visa Form.resx">
+      <DependentUpon>Journalist Visa Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Menu.resx">
+      <DependentUpon>Main Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Relaxation Visa Form.resx">
+      <DependentUpon>Relaxation Visa Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchbiz.resx">
+      <DependentUpon>searchbiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchFiancee.resx">
+      <DependentUpon>searchFiancee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchJournalist.resx">
+      <DependentUpon>searchJournalist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchRelax.resx">
+      <DependentUpon>searchRelax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchStudent.resx">
+      <DependentUpon>searchStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchWorker.resx">
+      <DependentUpon>searchWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentVisa.resx">
+      <DependentUpon>StudentVisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewBiz.resx">
+      <DependentUpon>viewBiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewFiancee.resx">
+      <DependentUpon>viewFiancee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewJournalist.resx">
+      <DependentUpon>viewJournalist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewRelax.resx">
+      <DependentUpon>viewRelax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewStudent.resx">
+      <DependentUpon>viewStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewWorker.resx">
+      <DependentUpon>viewWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Worker Visa Form.resx">
+      <DependentUpon>Worker Visa Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images_5.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
